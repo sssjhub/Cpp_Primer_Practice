@@ -2729,7 +2729,11 @@ vector<char *> x;
 * Linux 上设置好了 Locale 就几乎一劳永逸设置好所有开发环境的编码, 不像奇葩的 Windows.
 * Google 强调有一对 if-else 时, 不论有没有嵌套, 都要有大括号. Apple 正好 有栽过跟头 .
 * 其实我主张指针／地址操作符与变量名紧邻, int* a, b vs int *a, b, 新手会误以为前者的 b 是 int * 变量, 但后者就不一样了, 高下立判.
+
 * 在这风格指南里我才刚知道 C++ 原来还有所谓的 Alternative operator representations, 大概没人用吧.
 (注意构造函数初始值列表（Constructer Initializer List）与列表初始化（Initializer List）是两码事, 我就差点混淆了它们的翻译.
 * 事实上, 如果您熟悉英语本身的书写规则, 就会发现该风格指南在格式上的规定与英语语法相当一脉相承. 比如普通标点符号和单词后面还有文本的话, 总会留一个空格; 特殊符号与单词之间就不用留了, 比如 if (true) 中的圆括号与 true.
 * 本风格指南没有明确规定 void 函数里要不要用 return 语句, 不过就 Google 开源项目 leveldb 并没有写; 此外从 Is a blank return statement at the end of a function whos return type is void necessary? 来看, * return; 比 return ; 更约定俗成（事实上 cpplint 会对后者报错, 指出分号前有多余的空格）, 且可用来提前跳出函数栈.
+
+
+* 文档链接：https://zh-google-styleguide.readthedocs.io/en/latest/
